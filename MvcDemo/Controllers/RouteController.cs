@@ -4,12 +4,12 @@ namespace MvcDemo.Controllers
 {
     public class RouteController : Controller
     {
-        // GET: Route
         public ActionResult Index(string id)
         {
             return View();
         }
 
+        [Route("Test/{id}")]
         public ActionResult Test(string id)
         {
             return View();

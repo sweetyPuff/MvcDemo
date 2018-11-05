@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using MvcDemo.Models;
 
 namespace MvcDemo
 {
@@ -13,17 +14,21 @@ namespace MvcDemo
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "complexRoute",
-                url: "{action}/{id}",
-                defaults: new { controller = "Route", action = "Test" }
-            );
+            routes.MapMvcAttributeRoutes();
 
+            //routes.MapRoute(
+            //    name: "complexRoute",
+            //    url: "{action}/{id}",
+            //    defaults: new { controller = "Route", action = "Test" }
+            //);
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+
+           
 
         }
     }
