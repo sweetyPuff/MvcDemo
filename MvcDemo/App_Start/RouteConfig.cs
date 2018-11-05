@@ -15,8 +15,8 @@ namespace MvcDemo
 
             routes.MapRoute(
                 name: "complexRoute",
-                url: "{id}/{name}",
-                defaults: new { controller = "Route", action = "Index"}
+                url: "{action}/{id}",
+                defaults: new { controller = "Route", action = "Test" }
             );
 
             routes.MapRoute(
@@ -24,6 +24,7 @@ namespace MvcDemo
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
         }
     }
 }
