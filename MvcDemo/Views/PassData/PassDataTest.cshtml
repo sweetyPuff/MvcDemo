@@ -1,0 +1,29 @@
+﻿@using MvcDemo.Models
+@model MvcDemo.Models.ViewModel.PassDataViewModel
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>ViewData</h2>
+
+@ViewData["Name"]
+@(((Order)ViewData["Order"]).Id)
+
+<h2>ViewBag</h2>
+
+@ViewBag.Name
+@ViewBag.Order.Id
+
+
+<h2>TempData</h2>
+
+@TempData["Name"]
+@(((Order)TempData["Order"]).Id)
+
+
+
+<h2>ViewModel</h2>
+
+@Model.Name
+@Model.Order.Id

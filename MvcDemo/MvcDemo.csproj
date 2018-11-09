@@ -144,6 +144,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Controllers\PassDataController.cs" />
+    <Compile Include="Models\ViewModel\PassDataViewModel.cs" />
     <Compile Include="Controllers\RouteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -192,6 +195,9 @@
     <Content Include="Views\Route\Test.cshtml" />
     <Content Include="Views\Book\Index.cshtml" />
     <Content Include="Views\Book\Insert.cshtml" />
+    <Content Include="Views\PassData\PassDataTest.cshtml" />
+    <Content Include="Views\PassData\Index.cshtml" />
+    <Content Include="Views\PassData\NewPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

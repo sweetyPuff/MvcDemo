@@ -1,0 +1,25 @@
+﻿@using MvcDemo.Models
+@model MvcDemo.Models.ViewModel.PassDataViewModel
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>ViewData</h2>
+
+@ViewData["Name"]
+
+<h2>ViewBag</h2>
+
+@ViewBag.Name
+
+
+<h2>TempData</h2>
+
+@TempData["Name"]
+
+
+
+<h2>ViewModel</h2>
+
+@Model.Name
