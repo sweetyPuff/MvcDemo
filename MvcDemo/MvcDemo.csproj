@@ -196,7 +196,6 @@
     <Content Include="Views\Book\Index.cshtml" />
     <Content Include="Views\Book\Insert.cshtml" />
     <Content Include="Views\PassData\PassDataTest.cshtml" />
-    <Content Include="Views\PassData\Index.cshtml" />
     <Content Include="Views\PassData\NewPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
