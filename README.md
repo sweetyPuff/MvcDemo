@@ -19,9 +19,12 @@ Views
 4. Child Action
 
 Controllers  
-1. Passing Data to Views(ViewData, ViewBag, Object)
+1. Passing Data to Views(ViewData, ViewBag, TempData, Object)
 2. ActionResults, ViewResults  
-3. ViewModel
+
+Model
+1. ViewModel
+2. Service
 
 ## Route
 Rounte.config  
@@ -48,6 +51,5 @@ Anti-forgery Tokens
 ## Web API
 RESTful  
 APIController  
-Camel Notation  
-IHttpActionResult   
-SPAs
+NSwag
+
